@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.wrap{
+		width: 400px;
+		height: 400px;
+		position: relative;
+	}
+	.wrap .left{
+		width: 200px;
+		height: 200px;
+		background-color: red;
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		z-index: 3;
+	}
+	.wrap .center{
+		width: 200px;
+		height: 200px;
+		background-color: green;
+		position: absolute;
+		top: 50px;
+		left: 50px;
+		z-index: 2;
+	}
+	.wrap .right{
+		width: 200px;
+		height: 200px;
+		background-color: blue;
+		position: absolute;
+		top: 80px;
+		left: 80px;
+		z-index: 1;
+	}
+</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="left"></div>
+		<div class="center"></div>
+		<div class="right"></div>
+	</div>
+</body>
+</html>

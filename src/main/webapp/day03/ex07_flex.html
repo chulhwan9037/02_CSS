@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	*{margin: 0px; padding: 0px;}
+	main{
+		width: 100%;
+		height: 100vh;
+		background-color: lightcyan;
+	}
+	section{
+		border: 10px solid blue;
+		display: flex; /* 자기는 블록유지, 자식은 flex 환경설정 */
+		/* display: inline-flex; */ /* 자기는 인라인, 자식은 flex 환경설정 */
+		flex-direction: row; /* 기본값이므로 row 생략가능 */
+		/* flex-direction: column; */ /* 세로정렬 */
+		flex-wrap: wrap; /* 줄바꿈, 크기는 변하지 않고 줄이 바뀐다.*/
+		/* flex-wrap: nowrap; *//* 줄바꿈 안해, 크기가 줄어든다.*/
+		
+		/* flex-flow: row wrap; *//* 행정렬, 줄바꿈 한번에 */
+	}
+	section article{
+		width: 100px;
+		height: 100px;
+		background-color: aqua;
+		border: 1px solid #000;
+	}
+	
+	
+</style>
+</head>
+<body>
+	<!--  
+		
+	-->
+	<main>
+		<section>
+			<article></article>
+			<article></article>
+			<article></article>
+			<article></article>
+			<article></article>
+			<article></article>
+			<article></article>
+		</section>
+	</main>
+</body>
+</html>

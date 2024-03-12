@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+
+.nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 4;
+}
+
+.nav_wrap{
+	/* 최소한의 크기 */
+	min-width: 200px;
+	min-height: 100vh;
+	background-color: #81c0c0;
+	list-style-type: none;
+	padding-top: 100px; 
+}
+
+.nav_wrap li{
+	display: flex;
+	padding: 10px 16px;
+}
+
+.nav_wrap li:hover{
+	background-color: lightgray;
+}
+
+.nav_icon{
+	border: none;
+	/* transparent 배경색 투명하게  */
+	background-color: transparent;
+	font-size: 1.5rem;
+}
+
+.nav_menu{
+	border: none;
+	/* transparent 배경색 투명하게  */
+	background-color: transparent;
+	font-size: 1rem;
+}
+
+/* 800px 이하이면 Nohtube 없어진다. */
+	@media screen and (max-width:800px){
+		.nav_menu{display: none;}
+		.nav_wrap{min-width: 50px;}
+	}
+
+/* 520px 이하이면 검색창 없어지고 서치 그림 나온다. */
+	@media screen and (max-width:520px){
+		.nav_wrap{display: none;}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

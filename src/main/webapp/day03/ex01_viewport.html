@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<!-- 너비를 디바이스(장치) 기준으로 초기 화면 배율은 원상태로 유지한다. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>반응형 웹 - viewport</title>
+<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	.outer{
+		font-size: 24px;
+	}
+	.inner{
+		/* font-size: 2rem; */ /* rem : root(html)의 크기를 이용 */
+		font-size: 2em; /* 부모의 크기를 참조 */
+		width: 200px;
+		height: 200px;
+		display: inline-block;
+		background-color: tomato;
+		
+		/* rem 마진과 패딩 : 외부의 크기를 이용*/
+		/* margin: 1rem; */ /* rem : root(html)의 크기를 이용 */
+		/* padding: 1rem;  */ /* rem : root(html)의 크기를 이용 */
+		/* em 마진과 패딩 : 자기 자신의 글자 크기를 기준 */
+		/* margin: 1em; */ /* 현재의 글자크기가 48(24*2em)  */
+		/* padding: 1em; */ /* 현재의 글자크기가 48(24*2em)  */
+	}
+	p{
+		/* font-size: 10vw; */ /* 화면 너비의 백분율 */
+		/* font-size: 10vh;  *//* 화면 높이의 백분율 */
+		font-size: 10vmin;
+	}
+</style>
+</head>
+<body>
+	<!--  
+		1. 반응형 웹 디자인을 하기 위한 기본적으로 알아 두어야 할 것이 뷰 포트 이다. 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		2. rem 과 em 글자크기 지정
+			rem : root(html)의 크기를 이용한다. 
+			em  : 부모의 크기를 참조한다. 
+		3. vw, vh, vmax, vmin 
+			vw : 화면 너비의 백분율을 맞춘다.
+			vh : 화면 높이의 백분율을 맞춘다. 
+			vmax : 화면 크기에 너비와 높이 중 큰 것의 백분율로 맞춘다.
+			vmin : 화면 크기에 너비와 높이 중 작은 것의 백분율로 맞춘다.
+	-->
+	<h1>Hello World</h1>
+	<div class="outer">
+		<!-- 기본글꼴크기 16px -->
+		<div class="inner">고양이</div>
+		<div class="inner">강아지</div>
+	</div>
+	<p>한국ICT인재개발원</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
